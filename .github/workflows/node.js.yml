@@ -40,7 +40,7 @@ jobs:
     strategy:
       matrix:
         node-version: [18.15]
-    if: githubx.ref == 'refs/heads/dev'
+    if: github.ref == 'refs/heads/dev'
       env:
         NODE_ENV: "development"
       steps:
